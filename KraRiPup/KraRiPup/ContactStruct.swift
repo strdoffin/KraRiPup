@@ -9,5 +9,5 @@ import Foundation
 struct ContactStruct:Identifiable {
     var id:UUID = UUID()
     var name :String
-    var date :[String]
+    var date :[String] = []
 }

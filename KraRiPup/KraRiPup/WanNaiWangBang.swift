@@ -31,7 +31,7 @@ struct WanNaiWangBang: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                    NavigationLink{CalendarInfoView()}label: {
+                    NavigationLink{Mycontacts()}label: {
                         Text("Next")
                             .font(.title)
                             .foregroundColor(.white)

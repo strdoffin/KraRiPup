@@ -5,11 +5,15 @@ struct CalendarInfoView: View {
     @State var comparedate = "22/06/2567"
     @State private var selectedDate = Date()
     @State private var isActive = false
-    
+    @Binding var namePassed :ContactStruct
     var body: some View {
         ZStack {
-            Color.teal
-                .ignoresSafeArea()
+            LinearGradient(gradient: Gradient(stops: [
+                Gradient.Stop(color: Color(red: 2/255, green: 0, blue: 36/255), location: 0),
+                Gradient.Stop(color: Color(red: 9/255, green: 9/255, blue: 121/255), location: 0.57),
+                Gradient.Stop(color: Color(red: 0, green: 212/255, blue: 255/255), location: 0.93)
+            ]), startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
 
             VStack {
                 // Display selected date as an integer (day of the month)
@@ -26,7 +30,7 @@ struct CalendarInfoView: View {
 
                 List {
                     Section(header: Text("Detail")) {
-                        Text("ชื่อคนใช้อ้ะ : ")
+                        Text("ชื่อคนใช้อ้ะ : \(namePassed.name)")
                     }
                     VStack {
                         // Calendar
@@ -49,13 +53,15 @@ struct CalendarInfoView: View {
                         Button(action: {
                             printSelectedDate()
                             self.isActive.toggle()
+                            
+                            dismiss()
                         }) {
                             Text("ส่งวันที่ว่างจุ้บๆ")
                                 .font(.title)
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(isActive ? Color.gray : Color.blue)
-                                .cornerRadius(50)
+                                .cornerRadius(20)
                         }
                         .padding()
 
@@ -84,11 +90,12 @@ struct CalendarInfoView: View {
 
     func printSelectedDate() {
         print("Selected date is \(formattedDate)")
+        if !namePassed.date.contains(formattedDate){
+            namePassed.date.append(formattedDate)
+        }
     }
 }
 
-struct CalendarInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        CalendarInfoView()
-    }
-}
+#Preview {
+    @State var calendarPreview =  ContactStruct(name: "dofu", date: ["23/06/2567"])
+    return CalendarInfoView(namePassed: $calendarPreview)}

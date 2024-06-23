@@ -1,40 +1,56 @@
-//
-//  Mycontacts.swift
-//  KraRiPup
-//
-//  Created by admin on 22/6/2567 BE.
-//
-
 import SwiftUI
 
 struct Mycontacts: View {
+    @State var contactList: [ContactStruct] = [
+        
+    ]
+    
+    func showDuplicates() -> [String] {
+        let allDates = contactList.flatMap { $0.date }
+
+            var seen = Set<String>()
+            var duplicates = Set<String>()
+            
+            for date in allDates {
+                if seen.contains(date) {
+                    duplicates.insert(date)
+                } else {
+                    seen.insert(date)
+                }
+            }
+            
+        return Array(duplicates)
+    }
+
     var body: some View {
-        NavigationStack{
-            List{
-                NavigationLink{
-                    CalendarInfoView()
-                } label: {
-                Text("dsfsd")
+        NavigationStack {
+            List {
+                ForEach($contactList) { contact in
+                    NavigationLink(destination: CalendarInfoView(namePassed: contact)) {
+                        ContactInfoView(contactPassed: contact)
+                    }
                 }
-                NavigationLink{
-                    CalendarInfoView()
-                } label: {
-                    Text("fsdfds")
+                NavigationLink(destination: AddContact(contactList: $contactList)) {
+                    HStack {
+                        Image(systemName: "person.crop.circle.badge.plus")
+                        Text("Add Contact")
+                    }
                 }
-                NavigationLink{
-                    CalendarInfoView()
-                } label: {
-                    Image(systemName: "person.crop.circle.badge.plus")
-                    Text("Add Contact")
+                NavigationLink(destination: ResultView(dateResult: showDuplicates())) {
+                    HStack {
+                        Image(systemName: "rectangle.portrait.and.arrow.forward.fill")
+                        Text("See Result")
+                    }
                 }
-            }.navigationTitle("Mycontact")
+            }
+            .navigationTitle("My Team")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
-    
-    
-    
 }
 
-#Preview {
-    Mycontacts()
+struct Mycontacts_Previews: PreviewProvider {
+    static var previews: some View {
+        Mycontacts()
+    }
 }
