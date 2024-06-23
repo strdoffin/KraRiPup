@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactInfoView: View {
+struct CalendarInfoView: View {
     @State private var selectedDate = Date()
     @State private var isActive = false
     var body: some View {
@@ -81,6 +81,6 @@ struct ContactInfoView: View {
 }
 
 #Preview {
-    ContactInfoView()
+    CalendarInfoView()
     
 }

@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct WanNaiWangBang: View {
-    @State private var selectedDate = Date()
-    @State private var isActive = false
+    
+    
     var body: some View {
+        NavigationStack{
             VStack{
                 Text("Wan Nai Wang Bang?")
                     .font(.largeTitle)
                 Text("ya bid na i sud")
                     .font(.title2)
-                Button(action: {
-                    self.isActive.toggle()
-                }) {
-                    Text("ส่งวันที่ว่างจุ้บๆ")
+                NavigationLink{CalendarInfoView()}label: {
+                    Text("Next")
                         .font(.title)
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.gray )
-                        .cornerRadius(50)
+                        .cornerRadius(20)
                 }
+                
             }
+        }
         }
     }
 
