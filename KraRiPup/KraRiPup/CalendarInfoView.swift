@@ -1,10 +1,3 @@
-//
-//  ContactInfoView.swift
-//  Contact
-//
-//  Created by admin on 22/6/2567 BE.
-//
-
 import SwiftUI
 
 struct CalendarInfoView: View {
@@ -16,46 +9,54 @@ struct CalendarInfoView: View {
             Color.teal
                 .ignoresSafeArea()
 
-            List {
-                Section(header: Text("Detail")) {
-                    Text("ชื่อคนใช้อ้ะ : ")
-                }
-                VStack {
-                    // Calendar
-                    DatePicker(
-                        "Select a date",
-                        selection: $selectedDate,
-                        displayedComponents: .date
-                    )
-                    .datePickerStyle(GraphicalDatePickerStyle())
+            VStack {
+                // Display selected date as an integer (day of the month)
+                Text("Selected Day: \(dayOfMonth)")
+                    .font(.title)
+                    .foregroundColor(.white)
                     .padding()
 
-                    Spacer()
-
-                    Text("Wanni Wang: \(formattedDate)")
-                        .font(.title2)
+                List {
+                    Section(header: Text("Detail")) {
+                        Text("ชื่อคนใช้อ้ะ : ")
+                    }
+                    VStack {
+                        // Calendar
+                        DatePicker(
+                            "Select a date",
+                            selection: $selectedDate,
+                            displayedComponents: .date
+                        )
+                        .datePickerStyle(GraphicalDatePickerStyle())
                         .padding()
 
-                    Spacer()
+                        Spacer()
 
-                    Button(action: {
-                        printSelectedDate()
-                        self.isActive.toggle()
-                    }) {
-                        Text("ส่งวันที่ว่างจุ้บๆ")
-                            .font(.title)
-                            .foregroundColor(.white)
+                        Text("Wanni Wang: \(formattedDate)")
+                            .font(.title2)
                             .padding()
-                            .background(isActive ? Color.gray : Color.blue)
-                            .cornerRadius(50)
+
+                        Spacer()
+
+                        Button(action: {
+                            printSelectedDate()
+                            self.isActive.toggle()
+                        }) {
+                            Text("ส่งวันที่ว่างจุ้บๆ")
+                                .font(.title)
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(isActive ? Color.gray : Color.blue)
+                                .cornerRadius(50)
+                        }
+                        .padding()
+
+                        Spacer()
                     }
                     .padding()
-
-                    Spacer()
                 }
-                .padding()
+                .listStyle(GroupedListStyle()) // Apply list style
             }
-            .listStyle(GroupedListStyle()) // Apply list style
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
@@ -68,19 +69,19 @@ struct CalendarInfoView: View {
         return formatter.string(from: selectedDate)
     }
 
+    var dayOfMonth: Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: selectedDate)
+        return components.day ?? 0
+    }
+
     func printSelectedDate() {
         print("Selected date is \(formattedDate)")
     }
 }
 
-<<<<<<< HEAD
-struct ContactInfoView_Previews: PreviewProvider {
+struct CalendarInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInfoView()
+        CalendarInfoView()
     }
-=======
-#Preview {
-    CalendarInfoView()
-    
->>>>>>> c872bc019226c9f05a57e7d9d4c638ea340a5730
 }
