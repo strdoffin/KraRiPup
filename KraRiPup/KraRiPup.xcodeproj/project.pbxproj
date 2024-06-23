@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84CFCB382C27C7AA004C2955 /* KraRiPupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFCB372C27C7AA004C2955 /* KraRiPupApp.swift */; };
+		84CFCB3A2C27C7AA004C2955 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFCB392C27C7AA004C2955 /* ContentView.swift */; };
+		84CFCB3C2C27C7AC004C2955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CFCB3B2C27C7AC004C2955 /* Assets.xcassets */; };
+		84CFCB3F2C27C7AC004C2955 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CFCB3E2C27C7AC004C2955 /* Preview Assets.xcassets */; };
+		84CFCB492C27C7AD004C2955 /* KraRiPupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFCB482C27C7AD004C2955 /* KraRiPupTests.swift */; };
+		84CFCB532C27C7AD004C2955 /* KraRiPupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFCB522C27C7AD004C2955 /* KraRiPupUITests.swift */; };
+		84CFCB552C27C7AD004C2955 /* KraRiPupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFCB542C27C7AD004C2955 /* KraRiPupUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CFCB452C27C7AD004C2955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CFCB2C2C27C7AA004C2955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CFCB332C27C7AA004C2955;
+			remoteInfo = KraRiPup;
+		};
+		84CFCB4F2C27C7AD004C2955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CFCB2C2C27C7AA004C2955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CFCB332C27C7AA004C2955;
+			remoteInfo = KraRiPup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84CFCB342C27C7AA004C2955 /* KraRiPup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KraRiPup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CFCB372C27C7AA004C2955 /* KraRiPupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraRiPupApp.swift; sourceTree = "<group>"; };
+		84CFCB392C27C7AA004C2955 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84CFCB3B2C27C7AC004C2955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CFCB3E2C27C7AC004C2955 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84CFCB442C27C7AD004C2955 /* KraRiPupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KraRiPupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CFCB482C27C7AD004C2955 /* KraRiPupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraRiPupTests.swift; sourceTree = "<group>"; };
+		84CFCB4E2C27C7AD004C2955 /* KraRiPupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KraRiPupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CFCB522C27C7AD004C2955 /* KraRiPupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraRiPupUITests.swift; sourceTree = "<group>"; };
+		84CFCB542C27C7AD004C2955 /* KraRiPupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraRiPupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CFCB312C27C7AA004C2955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB412C27C7AD004C2955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB4B2C27C7AD004C2955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CFCB2B2C27C7AA004C2955 = {
+			isa = PBXGroup;
+			children = (
+				84CFCB362C27C7AA004C2955 /* KraRiPup */,
+				84CFCB472C27C7AD004C2955 /* KraRiPupTests */,
+				84CFCB512C27C7AD004C2955 /* KraRiPupUITests */,
+				84CFCB352C27C7AA004C2955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CFCB352C27C7AA004C2955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CFCB342C27C7AA004C2955 /* KraRiPup.app */,
+				84CFCB442C27C7AD004C2955 /* KraRiPupTests.xctest */,
+				84CFCB4E2C27C7AD004C2955 /* KraRiPupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CFCB362C27C7AA004C2955 /* KraRiPup */ = {
+			isa = PBXGroup;
+			children = (
+				84CFCB372C27C7AA004C2955 /* KraRiPupApp.swift */,
+				84CFCB392C27C7AA004C2955 /* ContentView.swift */,
+				84CFCB3B2C27C7AC004C2955 /* Assets.xcassets */,
+				84CFCB3D2C27C7AC004C2955 /* Preview Content */,
+			);
+			path = KraRiPup;
+			sourceTree = "<group>";
+		};
+		84CFCB3D2C27C7AC004C2955 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84CFCB3E2C27C7AC004C2955 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84CFCB472C27C7AD004C2955 /* KraRiPupTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CFCB482C27C7AD004C2955 /* KraRiPupTests.swift */,
+			);
+			path = KraRiPupTests;
+			sourceTree = "<group>";
+		};
+		84CFCB512C27C7AD004C2955 /* KraRiPupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84CFCB522C27C7AD004C2955 /* KraRiPupUITests.swift */,
+				84CFCB542C27C7AD004C2955 /* KraRiPupUITestsLaunchTests.swift */,
+			);
+			path = KraRiPupUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CFCB332C27C7AA004C2955 /* KraRiPup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CFCB582C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPup" */;
+			buildPhases = (
+				84CFCB302C27C7AA004C2955 /* Sources */,
+				84CFCB312C27C7AA004C2955 /* Frameworks */,
+				84CFCB322C27C7AA004C2955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KraRiPup;
+			productName = KraRiPup;
+			productReference = 84CFCB342C27C7AA004C2955 /* KraRiPup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CFCB432C27C7AD004C2955 /* KraRiPupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CFCB5B2C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPupTests" */;
+			buildPhases = (
+				84CFCB402C27C7AD004C2955 /* Sources */,
+				84CFCB412C27C7AD004C2955 /* Frameworks */,
+				84CFCB422C27C7AD004C2955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CFCB462C27C7AD004C2955 /* PBXTargetDependency */,
+			);
+			name = KraRiPupTests;
+			productName = KraRiPupTests;
+			productReference = 84CFCB442C27C7AD004C2955 /* KraRiPupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84CFCB4D2C27C7AD004C2955 /* KraRiPupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CFCB5E2C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPupUITests" */;
+			buildPhases = (
+				84CFCB4A2C27C7AD004C2955 /* Sources */,
+				84CFCB4B2C27C7AD004C2955 /* Frameworks */,
+				84CFCB4C2C27C7AD004C2955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CFCB502C27C7AD004C2955 /* PBXTargetDependency */,
+			);
+			name = KraRiPupUITests;
+			productName = KraRiPupUITests;
+			productReference = 84CFCB4E2C27C7AD004C2955 /* KraRiPupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CFCB2C2C27C7AA004C2955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					84CFCB332C27C7AA004C2955 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					84CFCB432C27C7AD004C2955 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 84CFCB332C27C7AA004C2955;
+					};
+					84CFCB4D2C27C7AD004C2955 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 84CFCB332C27C7AA004C2955;
+					};
+				};
+			};
+			buildConfigurationList = 84CFCB2F2C27C7AA004C2955 /* Build configuration list for PBXProject "KraRiPup" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CFCB2B2C27C7AA004C2955;
+			productRefGroup = 84CFCB352C27C7AA004C2955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CFCB332C27C7AA004C2955 /* KraRiPup */,
+				84CFCB432C27C7AD004C2955 /* KraRiPupTests */,
+				84CFCB4D2C27C7AD004C2955 /* KraRiPupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CFCB322C27C7AA004C2955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CFCB3F2C27C7AC004C2955 /* Preview Assets.xcassets in Resources */,
+				84CFCB3C2C27C7AC004C2955 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB422C27C7AD004C2955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB4C2C27C7AD004C2955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CFCB302C27C7AA004C2955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CFCB3A2C27C7AA004C2955 /* ContentView.swift in Sources */,
+				84CFCB382C27C7AA004C2955 /* KraRiPupApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB402C27C7AD004C2955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CFCB492C27C7AD004C2955 /* KraRiPupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CFCB4A2C27C7AD004C2955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CFCB552C27C7AD004C2955 /* KraRiPupUITestsLaunchTests.swift in Sources */,
+				84CFCB532C27C7AD004C2955 /* KraRiPupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CFCB462C27C7AD004C2955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CFCB332C27C7AA004C2955 /* KraRiPup */;
+			targetProxy = 84CFCB452C27C7AD004C2955 /* PBXContainerItemProxy */;
+		};
+		84CFCB502C27C7AD004C2955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CFCB332C27C7AA004C2955 /* KraRiPup */;
+			targetProxy = 84CFCB4F2C27C7AD004C2955 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84CFCB562C27C7AD004C2955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84CFCB572C27C7AD004C2955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CFCB592C27C7AD004C2955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KraRiPup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84CFCB5A2C27C7AD004C2955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KraRiPup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84CFCB5C2C27C7AD004C2955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KraRiPup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KraRiPup";
+			};
+			name = Debug;
+		};
+		84CFCB5D2C27C7AD004C2955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KraRiPup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KraRiPup";
+			};
+			name = Release;
+		};
+		84CFCB5F2C27C7AD004C2955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KraRiPup;
+			};
+			name = Debug;
+		};
+		84CFCB602C27C7AD004C2955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dofu.KraRiPupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KraRiPup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CFCB2F2C27C7AA004C2955 /* Build configuration list for PBXProject "KraRiPup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CFCB562C27C7AD004C2955 /* Debug */,
+				84CFCB572C27C7AD004C2955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CFCB582C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CFCB592C27C7AD004C2955 /* Debug */,
+				84CFCB5A2C27C7AD004C2955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CFCB5B2C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CFCB5C2C27C7AD004C2955 /* Debug */,
+				84CFCB5D2C27C7AD004C2955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CFCB5E2C27C7AD004C2955 /* Build configuration list for PBXNativeTarget "KraRiPupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CFCB5F2C27C7AD004C2955 /* Debug */,
+				84CFCB602C27C7AD004C2955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CFCB2C2C27C7AA004C2955 /* Project object */;
+}
