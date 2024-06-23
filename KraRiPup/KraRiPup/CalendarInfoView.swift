@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarInfoView: View {
+    @State var comparedate = "22/06/2567"
     @State private var selectedDate = Date()
     @State private var isActive = false
     var body: some View {
@@ -70,8 +71,7 @@ struct CalendarInfoView: View {
     }
     var formattedDate: String {
         let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        formatter.timeStyle = .short
+        formatter.dateFormat = "dd/MM/yyyy"
         return formatter.string(from: selectedDate)
     }
 
