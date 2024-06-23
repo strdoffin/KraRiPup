@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactInfoView: View {
+struct CalendarInfoView: View {
     @State private var selectedDate = Date()
     @State private var isActive = false
     
@@ -73,8 +73,14 @@ struct ContactInfoView: View {
     }
 }
 
+<<<<<<< HEAD
 struct ContactInfoView_Previews: PreviewProvider {
     static var previews: some View {
         ContactInfoView()
     }
+=======
+#Preview {
+    CalendarInfoView()
+    
+>>>>>>> c872bc019226c9f05a57e7d9d4c638ea340a5730
 }
