@@ -10,64 +10,57 @@ import SwiftUI
 struct ContactInfoView: View {
     @State private var selectedDate = Date()
     @State private var isActive = false
+    
     var body: some View {
-        ZStack{
-                        Color.teal
-                            .ignoresSafeArea()
+        ZStack {
+            Color.teal
+                .ignoresSafeArea()
 
-            List{
-                Section("Detail"){
+            List {
+                Section(header: Text("Detail")) {
                     Text("ชื่อคนใช้อ้ะ : ")
                 }
-                VStack(alignment:.center){
-                    VStack {
-                        Spacer()
-                        VStack{
-                            Text("Wan Nai Wang Bang?")
-                                .font(.largeTitle)
-                            Text("ya bid na i sud")
-                                .font(.title2)
-                        }
-                        
-                        Spacer()
-                        
-                        // Calendar
-                        DatePicker(
-                            "Select a date",
-                            selection: $selectedDate,
-                            displayedComponents: .date
-                        )
-                        .datePickerStyle(GraphicalDatePickerStyle())
+                VStack {
+                    // Calendar
+                    DatePicker(
+                        "Select a date",
+                        selection: $selectedDate,
+                        displayedComponents: .date
+                    )
+                    .datePickerStyle(GraphicalDatePickerStyle())
+                    .padding()
+
+                    Spacer()
+
+                    Text("Wanni Wang: \(formattedDate)")
+                        .font(.title2)
                         .padding()
-                        
-                        Spacer()
-                        
-                        Text("Wanni Wang: \(formattedDate)")
-                            .font(.title2)
+
+                    Spacer()
+
+                    Button(action: {
+                        printSelectedDate()
+                        self.isActive.toggle()
+                    }) {
+                        Text("ส่งวันที่ว่างจุ้บๆ")
+                            .font(.title)
+                            .foregroundColor(.white)
                             .padding()
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            printSelectedDate()
-                            self.isActive.toggle()
-                        }) {
-                            Text("ส่งวันที่ว่างจุ้บๆ")
-                                .font(.title)
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.blue)
-                                .cornerRadius(50)
-                        }
-                        .foregroundColor(isActive ? .gray : .white)
-                        .background(isActive ? Color.gray : Color.blue)
-                        
-                        Spacer()
+                            .background(isActive ? Color.gray : Color.blue)
+                            .cornerRadius(50)
                     }
-                }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding()
+
+                    Spacer()
+                }
+                .padding()
             }
+            .listStyle(GroupedListStyle()) // Apply list style
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
+    
     var formattedDate: String {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -80,7 +73,8 @@ struct ContactInfoView: View {
     }
 }
 
-#Preview {
-    ContactInfoView()
-    
+struct ContactInfoView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactInfoView()
+    }
 }
